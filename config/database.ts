@@ -30,8 +30,8 @@ export default ({ env }) => {
         password: env('DATABASE_PASSWORD', 'strapi'),
         ssl: env.bool('DATABASE_SSL', false)
           ? {
-              ca: Buffer.from(env('DATABASE_SSL_CA', ''), 'base64').toString('utf-8'),
               rejectUnauthorized: true,
+              ca: env('DATABASE_SSL_CA') ? Buffer.from(env('DATABASE_SSL_CA'), 'base64').toString('utf-8') : undefined,
             }
           : false,
       },
