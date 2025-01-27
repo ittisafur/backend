@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "singularName": "portfolio",
+    "pluralName": "portfolios",
+    "displayName": "Portfolio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Portfolio": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.portfolio-comp"
+    }
+  }
+}

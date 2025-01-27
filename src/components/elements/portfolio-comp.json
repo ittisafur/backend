@@ -1,0 +1,82 @@
+{
+  "collectionName": "components_elements_portfolio_comps",
+  "info": {
+    "displayName": "Portfolio Comp",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "isWorking": {
+      "type": "boolean"
+    },
+    "hasDesign": {
+      "type": "boolean"
+    },
+    "isFeatured": {
+      "type": "boolean"
+    },
+    "isBreakThrough": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml",
+        "maxLengthCharacters": 1200
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "isSideProject": {
+      "type": "boolean"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "url": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml",
+        "maxLengthCharacters": 25
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "stack": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.stack"
+    },
+    "metaData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta-data"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_seo_meta_data",
+  "info": {
+    "displayName": "MetaData",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 160
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "keywords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.keywords"
+    }
+  }
+}
