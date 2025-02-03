@@ -23,6 +23,7 @@ export interface ElementsPortfolioComp extends Struct.ComponentSchema {
     isSideProject: Schema.Attribute.Boolean;
     isWorking: Schema.Attribute.Boolean;
     metaData: Schema.Attribute.Component<'seo.meta-data', false>;
+    slug: Schema.Attribute.String & Schema.Attribute.Unique;
     stack: Schema.Attribute.Component<'elements.stack', true>;
     startDate: Schema.Attribute.Date;
     summary: Schema.Attribute.String &

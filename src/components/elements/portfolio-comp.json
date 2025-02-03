@@ -15,6 +15,10 @@
     "endDate": {
       "type": "date"
     },
+    "slug": {
+      "type": "string",
+      "unique": true
+    },
     "isWorking": {
       "type": "boolean"
     },
