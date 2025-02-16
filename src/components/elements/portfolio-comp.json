@@ -6,6 +6,10 @@
   },
   "options": {},
   "attributes": {
+    "slug": {
+      "type": "string",
+      "unique": true
+    },
     "title": {
       "type": "string"
     },
@@ -14,10 +18,6 @@
     },
     "endDate": {
       "type": "date"
-    },
-    "slug": {
-      "type": "string",
-      "unique": true
     },
     "isWorking": {
       "type": "boolean"
@@ -64,14 +64,6 @@
       "type": "string",
       "maxLength": 150
     },
-    "url": {
-      "type": "customField",
-      "options": {
-        "preset": "defaultHtml",
-        "maxLengthCharacters": 25
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
-    },
     "stack": {
       "type": "component",
       "repeatable": true,
@@ -81,6 +73,12 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.meta-data"
+    },
+    "url": {
+      "type": "string"
+    },
+    "yt_demo": {
+      "type": "string"
     }
   }
 }

@@ -32,14 +32,8 @@ export interface ElementsPortfolioComp extends Struct.ComponentSchema {
       }>;
     thumbnail: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String;
-    url: Schema.Attribute.RichText &
-      Schema.Attribute.CustomField<
-        'plugin::ckeditor5.CKEditor',
-        {
-          maxLengthCharacters: 25;
-          preset: 'defaultHtml';
-        }
-      >;
+    url: Schema.Attribute.String;
+    yt_demo: Schema.Attribute.String;
   };
 }
 

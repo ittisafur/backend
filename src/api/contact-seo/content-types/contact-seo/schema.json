@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_seos",
+  "info": {
+    "singularName": "contact-seo",
+    "pluralName": "contact-seos",
+    "displayName": "Contact SEO"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metaData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta-data"
+    }
+  }
+}
