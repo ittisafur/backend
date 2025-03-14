@@ -14,4 +14,22 @@ export default ({ env }) => ({
       },
     },
   },
+  email: {
+    config: {
+      provider: 'nodemailer',
+      providerOptions: {
+        host: 'smtp.zoho.com',
+        port: 465,
+        secure: true, // Set to false if using STARTTLS
+        auth: {
+          user: env('ZOHO_SMTP_USER'), // Your Zoho email
+          pass: env('ZOHO_SMTP_PASSWORD'), // Your app password
+        },
+      },
+      settings: {
+        defaultFrom: env('ZOHO_SMTP_USER'),
+        defaultReplyTo: env('ZOHO_SMTP_USER'),
+      },
+    },
+  },
 });
