@@ -32,7 +32,10 @@
       "options": {
         "preset": "defaultHtml"
       },
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor",
+      "extraPlugins": [
+        "SourceEditing"
+      ]
     },
     "metaData": {
       "type": "component",
@@ -40,5 +43,21 @@
       "component": "seo.meta-data",
       "required": true
     },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "blog"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "blogs"
+    }
   }
 }
