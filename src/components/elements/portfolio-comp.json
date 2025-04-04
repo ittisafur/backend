@@ -79,6 +79,9 @@
     },
     "yt_demo": {
       "type": "string"
+    },
+    "isFreelance": {
+      "type": "boolean"
     }
   }
 }

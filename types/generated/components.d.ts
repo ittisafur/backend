@@ -20,6 +20,7 @@ export interface ElementsPortfolioComp extends Struct.ComponentSchema {
     hasDesign: Schema.Attribute.Boolean;
     isBreakThrough: Schema.Attribute.Boolean;
     isFeatured: Schema.Attribute.Boolean;
+    isFreelance: Schema.Attribute.Boolean;
     isSideProject: Schema.Attribute.Boolean;
     isWorking: Schema.Attribute.Boolean;
     metaData: Schema.Attribute.Component<'seo.meta-data', false>;
